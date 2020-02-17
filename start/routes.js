@@ -30,3 +30,7 @@ Route.group(() => {
 })
   .prefix('account')
   .middleware(['auth:jwt'])
+
+Route.resource('categories', 'CategoryController')
+  .apiOnly()
+  .middleware(['auth:jwt'])
