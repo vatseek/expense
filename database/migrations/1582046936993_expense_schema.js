@@ -19,7 +19,7 @@ class ExpenseSchema extends Schema {
         .integer('category_id')
         .unsigned()
         .references('id')
-        .inTable('users')
+        .inTable('categories')
     })
   }
 

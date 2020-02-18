@@ -15,7 +15,7 @@ class CategoryController {
       .where('user_id', auth.current.user.id)
       .fetch()
 
-    return { data: categories }
+    return categories
   }
 
   /**
