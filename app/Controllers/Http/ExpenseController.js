@@ -11,11 +11,6 @@ class ExpenseController {
   /**
    * Show a list of all expenses.
    * GET expenses
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
-   * @param {View} ctx.view
    */
   async index ({ request, response, view }) {
   }
@@ -23,11 +18,6 @@ class ExpenseController {
   /**
    * Render a form to be used for creating a new expense.
    * GET expenses/create
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
-   * @param {View} ctx.view
    */
   async create ({ request, response, view }) {
   }
@@ -35,10 +25,6 @@ class ExpenseController {
   /**
    * Create/save a new expense.
    * POST expenses
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
    */
   async store ({ request, response }) {
   }
@@ -46,11 +32,6 @@ class ExpenseController {
   /**
    * Display a single expense.
    * GET expenses/:id
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
-   * @param {View} ctx.view
    */
   async show ({ params, request, response, view }) {
   }
@@ -58,11 +39,6 @@ class ExpenseController {
   /**
    * Render a form to update an existing expense.
    * GET expenses/:id/edit
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
-   * @param {View} ctx.view
    */
   async edit ({ params, request, response, view }) {
   }
@@ -70,10 +46,6 @@ class ExpenseController {
   /**
    * Update expense details.
    * PUT or PATCH expenses/:id
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
    */
   async update ({ params, request, response }) {
   }
@@ -81,10 +53,6 @@ class ExpenseController {
   /**
    * Delete a expense with id.
    * DELETE expenses/:id
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
    */
   async destroy ({ params, request, response }) {
   }
