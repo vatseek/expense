@@ -34,3 +34,7 @@ Route.group(() => {
 Route.resource('categories', 'CategoryController')
   .apiOnly()
   .middleware(['auth:jwt'])
+
+Route.resource('expenses', 'ExpenseController')
+  .apiOnly()
+  .middleware(['auth:jwt'])

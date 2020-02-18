@@ -13,6 +13,7 @@ class ExpenseController {
    * GET expenses
    */
   async index ({ request, response, view }) {
+
   }
 
   /**

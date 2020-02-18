@@ -4,14 +4,26 @@
 const Schema = use('Schema')
 
 class ExpenseSchema extends Schema {
-  up () {
+  up() {
     this.create('expenses', (table) => {
       table.increments()
       table.timestamps()
+      table.decimal('amount', 8, 2)
+      table.string('description', 255)
+      table
+        .integer('user_id')
+        .unsigned()
+        .references('id')
+        .inTable('users')
+      table
+        .integer('category_id')
+        .unsigned()
+        .references('id')
+        .inTable('users')
     })
   }
 
-  down () {
+  down() {
     this.drop('expenses')
   }
 }
